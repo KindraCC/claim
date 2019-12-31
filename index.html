@@ -2,19 +2,14 @@
 <html>
   <head>
     <style>
-       div.fill-screen {
-        position: fixed;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        text-align: center;
-    }
-
-    img.make-it-fit {
-        max-width: 99%;
-        max-height: 99%;
-    }
+      .background{
+      width:100%;
+      height:auto;
+      background: url('yoururl.jpg') no-repeat center;
+      background-position: 50% 50%;
+      background-size: 100% cover!important;
+      overflow:hidden;
+      }
     </style>
      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <script async src="./javascript/index.js"></script>
@@ -22,7 +17,7 @@
   </head>
   <body>
     <div class='fill-screen'>
-    <img class='make-it-fit' 
+    <img class='background' 
          src='https://images.rbxcdn.com/d66ae37d46e00a1ecacfe9531986690a.jpg'>
     </div>
   </body>
